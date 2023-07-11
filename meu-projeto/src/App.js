@@ -2,22 +2,19 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+const nome = 'Thamires'
+
+const novoNome = nome.toUpperCase()
+
+function soma(a, b) {
+  return a + b
+}
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>Meu título</h2>
+      <p>Olá {novoNome}</p>
+      <p>Soma: {soma(3, 5)}</p>
     </div>
   );
 }
