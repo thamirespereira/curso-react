@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import HelloWorld from './Components/HelloWorld';
 
 function App() {
 const nome = 'Thamires'
@@ -15,6 +16,7 @@ function soma(a, b) {
       <h2>Meu título</h2>
       <p>Olá {novoNome}</p>
       <p>Soma: {soma(3, 5)}</p>
+      <HelloWorld/>
     </div>
   );
 }
