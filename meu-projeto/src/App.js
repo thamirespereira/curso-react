@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import HelloWorld from './Components/HelloWorld';
+import SayMyName from './Components/SayMyName';
+import Pessoa from './Components/Pessoa';
 
 function App() {
 const nome = 'Thamires'
@@ -17,8 +19,12 @@ function soma(a, b) {
       <p>Olá {novoNome}</p>
       <p>Soma: {soma(3, 5)}</p>
       <HelloWorld/>
+      <SayMyName nome='Fernanda'/>
+      <SayMyName nome={nome}/>
+      <SayMyName nome='Maria'/>
+      <Pessoa nome="Thamires" idade="26" profissao="Programadora" foto="https:/via.placeholder.com/150"/>
     </div>
-  );
+  )
 }
 
 export default App;
