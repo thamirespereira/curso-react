@@ -3,6 +3,7 @@ import './App.css';
 import HelloWorld from './Components/HelloWorld';
 import SayMyName from './Components/SayMyName';
 import Pessoa from './Components/Pessoa';
+import Frase from './Components/Frase';
 
 function App() {
 const nome = 'Thamires'
@@ -19,6 +20,8 @@ function soma(a, b) {
       <p>Olá {novoNome}</p>
       <p>Soma: {soma(3, 5)}</p>
       <HelloWorld/>
+      <Frase/>
+      <Frase/>
       <SayMyName nome='Fernanda'/>
       <SayMyName nome={nome}/>
       <SayMyName nome='Maria'/>
